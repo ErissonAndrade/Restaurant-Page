@@ -1,0 +1,153 @@
+:root {
+    --font-color: white;
+    --light-bg-color: rgba(0, 0, 0, 0.6);
+
+}
+
+@font-face {
+    font-family: 'Bulgatti';
+    src: url('./Bulgatti-xgMV.ttf');
+    font-weight: 600;
+    font-style: normal;
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-style:italic;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+body {
+    background-image: url("./images/restaurant-home-bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    background-color: var(--light-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 10rem;
+    justify-content: space-around;
+    gap: 2rem;
+    color: var(--font-color);
+    padding: 0 1rem;
+    padding-top: 2rem;
+}
+
+.title {
+    font-size: 2rem;
+    font-family: 'Bulgatti';
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    width: 100%;
+}
+
+p {
+    color: var(--font-color);
+    font-size: 1.5rem;
+}
+
+.home-btns {
+    font-size: 1.5rem;
+    border-style: none;
+    background: none;
+    cursor: pointer;
+    color: var(--font-color);
+    transition: transform 0.3s;
+}
+
+.home-btns:hover {
+    transform: translateY(-10%);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.main-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: space-around;
+    padding: 20px 100px;
+    background-color: var(--light-bg-color);
+    margin: 2rem;
+}
+
+img {
+    height: 600px;
+    width: 600px;
+    border-radius: 100%;
+    position: relative;
+    object-fit: cover;
+    padding: 30px;
+}
+
+footer {
+    background-color: var(--light-bg-color);
+    bottom: 0;
+    color: var(--font-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+.main-menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin: 2rem;
+}
+
+.menu-items {
+    color: var(--font-color);
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .6rem;
+    background-color: var(--light-bg-color);
+}
+
+.menu-items > img {
+    height: 300px;
+    width: 300px;
+}
+
+.main-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    background-color: var(--light-bg-color);
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.main-contact > p {
+    font-size: 2rem;
+    font-weight: 900;
+}
